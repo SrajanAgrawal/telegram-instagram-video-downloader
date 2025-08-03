@@ -38,15 +38,15 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     name = user.first_name if user and user.first_name else "there"
 
     welcome_message = f"""
-    👋 Hi {name}!
+        👋 Hi {name}!
 
-    📥 To download an Instagram video, follow these steps:
+        📥 To download an Instagram video, follow these steps:
 
-    1️⃣ Copy the Instagram video URL  
-    2️⃣ Paste it here using the /download command like this:  
-    `/download https://www.instagram.com/reels/xyz/`
+        1️⃣ Copy the Instagram video URL  
+        2️⃣ Paste it here using the /download command like this:  
+        `/download https://www.instagram.com/reels/xyz/`
 
-    ⚠️ Only public posts are supported.
+        ⚠️ Only public posts are supported.
     """
     await update.message.reply_text(welcome_message)
 
